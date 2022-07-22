@@ -7,7 +7,7 @@ import TitleText from './TitleText';
 
 function DisplayTask() {
 
-  
+
   return(
     <>
 
@@ -22,6 +22,12 @@ function DisplayTask() {
       <div className='listContainer'>
         <Task
           taskComplete={false}
+          text='Hello Friends' />
+        <Task
+          taskComplete={false}
+          text='Hello Friends' />
+        <Task
+          taskComplete={true}
           text='Hello Friends' />
       </div>
     </>
