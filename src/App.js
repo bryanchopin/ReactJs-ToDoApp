@@ -1,11 +1,12 @@
 import './App.css';
 import TitleText from './components/TitleText';
+import Task from './components/Task';
 
 function App() {
   return (
     <div className="App">
       <div className='titleContainer'>
-        <TitleText 
+        <TitleText
           classNamee='titleH1'
           title= 'To do App' />
       </div>
@@ -14,7 +15,14 @@ function App() {
           classNamee='subtitleH2'
           title='My List' />
         <div className='formContainer'></div>
-        <div className='listContainer'></div>
+        <div className='listContainer'>
+          <Task
+            text='Estudiar Algebra'
+            taskComplete={true} />
+          <Task
+            text='Estudiar Algebra'
+            taskComplete={false} />
+        </div>
       </div>
     </div>
   );
