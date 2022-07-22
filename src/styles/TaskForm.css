@@ -1,0 +1,17 @@
+.taskForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskInput{
+    width: 75%;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.taskButton{
+    width: 25%;
+    font-size: 1.1em;
+}

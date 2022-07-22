@@ -1,28 +1,16 @@
 import './App.css';
 import TitleText from './components/TitleText';
-import Task from './components/Task';
-
+import DisplayTask from './components/DisplayTask';
 function App() {
   return (
     <div className="App">
       <div className='titleContainer'>
         <TitleText
           classNamee='titleH1'
-          title= 'To do App' />
+          title= 'To Do App' />
       </div>
       <div className='mainContainer'>
-        <TitleText
-          classNamee='subtitleH2'
-          title='My List' />
-        <div className='formContainer'></div>
-        <div className='listContainer'>
-          <Task
-            text='Estudiar Algebra'
-            taskComplete={true} />
-          <Task
-            text='Estudiar Algebra'
-            taskComplete={false} />
-        </div>
+        <DisplayTask />
       </div>
     </div>
   );
